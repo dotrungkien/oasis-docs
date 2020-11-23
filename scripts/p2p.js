@@ -72,6 +72,7 @@ async function main() {
    * set policy by Bob
    */
   const datasetByBob = await Parcel.Dataset.connect(dataset.address, bobIdentity, bobConfig);
+  console.log({ datasetByBob });
   const policy = await Parcel.WhitelistPolicy.create(
     bobConfig,
     bobIdentity, // The policy creator, and subsequent owner.

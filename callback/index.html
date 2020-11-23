@@ -8,7 +8,7 @@
   (async function() {
     try {
       const response = await oidcClient.processSigninResponse(location.href);
-      console.log(response)
+      console.log(response.access_token)
       const IDToken = response.id_token;
       const decoded = jwt_decode(IDToken);
       const address = decoded.sub;
