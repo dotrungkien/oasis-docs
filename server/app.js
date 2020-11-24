@@ -8,7 +8,6 @@ const fileUpload = require('express-fileupload');
 const cors = require('cors');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var uploadRouter = require('./routes/upload');
 var filesRouter = require('./routes/files');
 
@@ -27,25 +26,8 @@ app.use(cors()); // it enables all cors requests
 app.use(fileUpload());
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/upload', uploadRouter);
 app.use('/files', filesRouter);
-
-// app.post('/upload', (req, res) => {
-//   console.log(req.headers);
-//   if (!req.files) {
-//     return res.status(500).send({ msg: 'file is not found' });
-//   }
-//   const myFile = req.files.file;
-
-//   myFile.mv(`${__dirname}/public/upload/${myFile.name}`, function (err) {
-//     if (err) {
-//       console.log(err);
-//       return res.status(500).send({ msg: 'Error occured' });
-//     }
-//     return res.send({ name: myFile.name, path: `/${myFile.name}` });
-//   });
-// });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
