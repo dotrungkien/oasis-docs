@@ -8,7 +8,7 @@
 
 Secure documents with Oasis Parcel SDK
 
-## Why Oasis Docs
+## Why Oasis Docs?
 
 In today's modern society, every day we hear data leakage incidents that cause huge losses in both money and trust in third parties.
 
@@ -57,9 +57,48 @@ For that reason, Oasis Docs was born.
 
 > _Coming Soon_
 
-## Development
+## Development Guide
 
 ### Server
+
+- config your environment variables in `.env`
+
+```sh
+OASIS_SERVER_CLIENT_ID='<REPLACE>'
+OASIS_API_PRIVATE_KEY='<REPLACE>'
+```
+
+- install all dependencies
+
+```sh
+npm install
+```
+
+- then run server, by default server run at `http://localhost:4000`
+
+```sh
+npm run start
+```
+
+### Client
+
+- set your backend URL at `src/constant.js`
+
+```js
+export const BACKEND_URL = 'http://localhost:4000/';
+```
+
+- install all dependencies
+
+```sh
+npm install
+```
+
+- then start your client, by default client run at `http://localhost:3000`
+
+```sh
+npm start
+```
 
 ## LICENSE
 
