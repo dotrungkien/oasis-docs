@@ -12,16 +12,16 @@ router.post('/', async (req, res) => {
   }
   console.log(req.files);
   const myFile = req.files.file;
-  // await uploadFor(address, myFile);
-  const dir = path.resolve('public', 'upload', address);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir);
-  myFile.mv(path.resolve(dir, myFile.name), function (err) {
-    if (err) {
-      console.log(err);
-      return res.status(500).send({ msg: 'Error occured' });
-    }
-    return res.send({ name: myFile.name, path: `/${myFile.name}` });
-  });
+  await uploadFor(address, myFile);
+  // const dir = path.resolve('public', 'upload', address);
+  // if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+  // myFile.mv(path.resolve(dir, myFile.name), function (err) {
+  //   if (err) {
+  //     console.log(err);
+  //     return res.status(500).send({ msg: 'Error occured' });
+  //   }
+  //   return res.send({ name: myFile.name, path: `/${myFile.name}` });
+  // });
 });
 
 module.exports = router;

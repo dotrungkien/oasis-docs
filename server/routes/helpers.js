@@ -18,6 +18,7 @@ const connectOperator = async () => {
 
 const connectUser = async (address, token) => {
   const identityAddress = new Parcel.Address(address);
+
   const config = new Parcel.Config({
     apiAccessToken: token,
   });
@@ -28,7 +29,7 @@ const connectUser = async (address, token) => {
 };
 
 module.exports.uploadFor = async (address, file) => {
-  const { operatorConfig, operatorIdentity } = connectOperator();
+  const { operatorConfig, operatorIdentity } = await connectOperator();
   const userIdentityAddress = new Parcel.Address(address);
 
   const datasetMetadata = {
