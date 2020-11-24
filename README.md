@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="./documentations/logo.png" alt="Oasis Docs logo" title="Oasis Docs"  height="70" />
+    <img src="./docs/logo.png" alt="Oasis Docs logo" title="Oasis Docs"  height="70" />
   <br>
 </h1>
 
@@ -27,27 +27,27 @@ For that reason, Oasis Docs was born.
 
 - Access to home page: https://oasis-docs.web.app
 
-![home](documentations/home.png)
+![home](docs/home.png)
 
 - Login with Oasis Cloud
 
-![login](documentations/login.png)
+![login](docs/login.png)
 
 - Upload your documents
 
-![upload](documentations/upload.png)
+![upload](docs/upload.png)
 
 - Uploading
 
-![upload](documentations/uploading.png)
+![upload](docs/uploading.png)
 
 - Success
 
-![upload](documentations/success.png)
+![upload](docs/success.png)
 
 - Failed
 
-![upload](documentations/failed.png)
+![upload](docs/failed.png)
 
 - Share with others
 
@@ -56,6 +56,10 @@ For that reason, Oasis Docs was born.
 - CRUD files
 
 > _Coming Soon_
+
+## Development
+
+### Server
 
 ## LICENSE
 
