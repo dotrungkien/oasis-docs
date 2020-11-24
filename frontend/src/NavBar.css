@@ -1,0 +1,56 @@
+.navbar {
+  background-color: #eaecef !important;
+  border-bottom: 1px solid #eaecef;
+}
+
+.navbar-brand img {
+  height: 44px;
+}
+
+.nav-separator {
+  border-right: solid 1px #464646;
+  margin: 5px;
+}
+
+.btn-nav {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.link-nav {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #282c34 !important;
+}
+
+.link-nav:hover {
+  /* color: rgba(255, 255, 255, 0.5) !important; */
+}
+
+.user-nav {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  line-height: 2;
+  color: #282c34 !important;
+  margin-right: 5px;
+}
+
+.user-nav-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.user-img-nav {
+  height: 22px;
+  margin-right: 7px;
+  border-radius: 50%;
+}
+
+.twitter-nav {
+  font-size: 22px;
+}

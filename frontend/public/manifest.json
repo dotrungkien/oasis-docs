@@ -1,0 +1,16 @@
+{
+  "short_name": "Oasis Docs",
+  "name": "Oasis Docs",
+  "description": "Secure your documentations. Simple & easy to use. Secure & Encrypted. Never Lose your Documents.",
+  "icons": [
+    {
+      "src": "https://oasisdocs.kiendt.me/icon.png",
+      "sizes": "250x250",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://oasisdocs.kiendt.me/manifest.json",
+  "display": "standalone",
+  "theme_color": "#f5781d",
+  "background_color": "#262522"
+}
