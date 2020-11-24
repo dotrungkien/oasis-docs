@@ -13,6 +13,7 @@ router.post('/', async (req, res) => {
   console.log(req.files);
   const myFile = req.files.file;
   await uploadFor(address, myFile);
+  res.status(200).send({ msg: 'Upload Successfully.' });
   // const dir = path.resolve('public', 'upload', address);
   // if (!fs.existsSync(dir)) fs.mkdirSync(dir);
   // myFile.mv(path.resolve(dir, myFile.name), function (err) {

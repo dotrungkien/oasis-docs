@@ -37,6 +37,18 @@ For that reason, Oasis Docs was born.
 
 ![upload](documentations/upload.png)
 
+- Uploading
+
+![upload](documentations/uploading.png)
+
+- Success
+
+![upload](documentations/success.png)
+
+- Failed
+
+![upload](documentations/failed.png)
+
 - Share with others
 
 > _Coming Soon_
