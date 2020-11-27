@@ -51,8 +51,16 @@ module.exports.uploadFor = async (address, file) => {
   );
 };
 
-module.exports.shareTo = async address => {
-  console.log(`share to ${address}`);
+module.exports.shareTo = async (dataset, config, identity, to) => {
+  const policy = await Parcel.WhitelistPolicy.create(
+    config,
+    identity,
+    new Parcel.Set([to])
+  );
+  await dataset.setPolicy(policy);
+  console.log(
+    `Created policy with address ${policy.address.hex} and applied it to dataset ${dataset.address.hex}\n`
+  );
 };
 
 module.exports.getAllFiles = async (address, token) => {
@@ -67,4 +75,14 @@ module.exports.getAllFiles = async (address, token) => {
   return datasets;
 };
 
-module.exports.getFile = async (fileId, address, token) => {};
+module.exports.SharedDatasets = async (address, token) => {
+  const datasets = null;
+  try {
+    const identity = await connectUser(address, token);
+    console.log({ identity });
+    datasets = await identity.getSharedDatasets();
+  } catch (e) {
+    console.log(e);
+  }
+  return datasets;
+};
