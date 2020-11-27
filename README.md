@@ -100,6 +100,10 @@ npm install
 npm start
 ```
 
+## Known issues
+
+- I cannot find a way to oauth with Oasis Steward, so app still can not fetch all file, also cannot grant/revoke permission on your own files. At now after upload files, you must go to `https://steward.oasiscloud.io/` to interact with your files.
+
 ## LICENSE
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](./LICENSE)
