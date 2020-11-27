@@ -25,7 +25,7 @@ For that reason, Oasis Docs was born.
 
 ## How to use
 
-- Access to home page: https://oasis-docs.web.app
+- Access to home page: https://oasis-docs.kiendt.me
 
 ![home](docs/home.png)
 
